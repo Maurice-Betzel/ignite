@@ -48,6 +48,7 @@
         <feature>ignite-slf4j</feature>
         <feature>ignite-spring</feature>
         <feature>ignite-ssh</feature>
+        <feature>ignite-thrift-tcp</feature>
         <feature>ignite-twitter</feature>
         <feature>ignite-urideploy</feature>
         <feature>ignite-web</feature>
