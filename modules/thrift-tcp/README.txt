@@ -1,19 +1,14 @@
 Apache Ignite Thrift-TCP Module
 ------------------------------
 
-Apache Ignite Thrift-TCP module provides Netty-based server which can be used to execute tasks and/or cache commands
-in grid using the Thrift protocol.
+Apache Ignite Thrift-TCP module provides Netty-based server which can be used to execute tasks and/or cache commands in grid using the Thrift protocol.
 
-To enable Thrift-TCP module when starting a standalone node, move 'optional/ignite-thrift-tcp' folder to
-'libs' folder before running 'ignite.{sh|bat}' script. The content of the module folder will
-be added to classpath in this case.
+To enable Thrift-TCP module when starting a standalone node, move 'optional/ignite-thrift-tcp' folder to 'libs' folder before running 'ignite.{sh|bat}' script. The content of the module folder will be added to classpath in this case.
 
 Importing Thrift-TCP Module In Maven Project
 -------------------------------------------
 
-If you are using Maven to manage dependencies of your project, you can add Thrift-TCP module
-dependency like this (replace '${ignite.version}' with actual Ignite version you are
-interested in):
+If you are using Maven to manage dependencies of your project, you can add Thrift-TCP module dependency like this (replace '${ignite.version}' with actual Ignite version you are interested in):
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
