@@ -18,7 +18,7 @@
 package org.apache.ignite.internal.processors.thrift.protocols.tcp.netty;
 
 /**
- * Created by mbetzel on 02.10.2016.
+ * Created by mbetzel on 03.10.2016.
  */
-public class GridNettyTcpBootstrap {
+public class IgniteNettyThriftHandler {
 }
