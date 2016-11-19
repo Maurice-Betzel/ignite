@@ -17,9 +17,14 @@ namespace java org.apache.ignite.thrift.protocol
 
 const string PROTOCOL_VERSION = "1.8.0.0"
 const string APPLICATION_XTHRIFT = "application/x-thrift"
+const i16 SUCCESS = 0
+const i16 FAILED = 1
+const i16 AUTHORIZATION_FAILED = 2
+const i16 SECURITY_CHECK_FAILED = 3
 
 enum GridClientPacketType {
     MEMCACHE, THRIFT, IGNITE_HANDSHAKE, IGNITE_HANDSHAKE_RES, IGNITE
+}
 
 enum GridCacheCommand {
     DESTROY_CACHE,
@@ -71,4 +76,21 @@ enum GridTopologyCommand {
 
 enum GridVersionCommand {
     VERSION, NAME
+}
+
+exception IgniteException {
+    1: required string type,
+    2: required string message,
+    3: optional string trace
+}
+
+struct IgniteResponse {
+    1: required string affinityNodeId,
+    2: required binary response,
+    3: required i16 successStatus,
+    4: optional IgniteException error
+}
+
+struct IgniteRequest {
+    1: required string command
 }
